@@ -23,7 +23,7 @@ const TextEditor = () => {
   const [quill, setQuill] = useState();
 
   useEffect(() => {
-    const s = io("http://localhost:8001");
+    const s = io("https://lit-fortress-99642.herokuapp.com/");
     setSocket(s);
 
     return () => {
